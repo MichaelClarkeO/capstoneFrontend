@@ -113,10 +113,11 @@ const Home = () => {
                             <h2>Username</h2>
                             <p>Photo</p>
                         </div>
-                </div>
+                
 
                     <div className='post__body'>
-                    <p>Message Here</p>
+                    <input type="text" placeholder='Comment Here'/>
+                        <button>Post</button>
                     </div>
 
                     <div className='feed__inputOptions'>
@@ -141,159 +142,116 @@ const Home = () => {
                             <h4>Delete</h4>
                         </div>
                     </div>
-
+                </div>
+                <div className='post'>
                 <div className='post__header'>
                         <div className='post__info'>
                             <h2>Username</h2>
                             <p>Photo</p>
-                </div>
-
-                    </div>
+                        </div>
+                
 
                     <div className='post__body'>
-                    <p>Message Here</p>
+                    <input type="text" placeholder='Comment Here'/>
+                        <button>Post</button>
                     </div>
-                    <div className='feed__inputContainer'>
-                        <div className='feed__inputOptions'>
-                            <div className='inputOption'></div>
-                            <span className='material-icons'>thumb_up</span>
+
+                    <div className='feed__inputOptions'>
+                        <div className='inputOption'>
+                            <i className='material-icons'>thumb_up</i>
                             <h4>Likes</h4>
                         </div>
-                        <div className='feed__inputOptions'>
-                            <div className='inputOption'></div>
+                        <div className='inputOption'>
                             <i className='material-icons'>thumb_down</i>
                             <h4>Dislikes</h4>
                         </div>
-                        <div className='feed__inputOptions'>
-                            <div className='inputOption'></div>
+                        <div className='inputOption'>
                             <i className='material-icons'>message</i>
                             <h4>Comment</h4>
                         </div>
-                        <div className='feed__inputOptions'>
-                            <div className='inputOption'></div>
+                        <div className='inputOption'>
                             <i className='material-icons'>edit</i>
                             <h4>Update</h4>
                         </div>
-                        <div className='feed__inputOptions'>
-                            <div className='inputOption'></div>
+                        <div className='inputOption'>
                             <i className='material-icons'>delete</i>
                             <h4>Delete</h4>
                         </div>
                     </div>
-            
+                </div>
+                <div className='post'>
                 <div className='post__header'>
                         <div className='post__info'>
                             <h2>Username</h2>
                             <p>Photo</p>
-                </div>
-
-                    </div>
+                        </div>
+                
 
                     <div className='post__body'>
-                    <p>Message Here</p>
+                    <input type="text" placeholder='Comment Here'/>
+                        <button>Post</button>
                     </div>
 
                     <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <span className='material-icons'>thumb_up</span>
-                        <h4>Likes</h4>
+                        <div className='inputOption'>
+                            <i className='material-icons'>thumb_up</i>
+                            <h4>Likes</h4>
+                        </div>
+                        <div className='inputOption'>
+                            <i className='material-icons'>thumb_down</i>
+                            <h4>Dislikes</h4>
+                        </div>
+                        <div className='inputOption'>
+                            <i className='material-icons'>message</i>
+                            <h4>Comment</h4>
+                        </div>
+                        <div className='inputOption'>
+                            <i className='material-icons'>edit</i>
+                            <h4>Update</h4>
+                        </div>
+                        <div className='inputOption'>
+                            <i className='material-icons'>delete</i>
+                            <h4>Delete</h4>
+                        </div>
                     </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>thumb_down</i>
-                        <h4>Dislikes</h4>
-                    </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>message</i>
-                        <h4>Comment</h4>
-                    </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>edit</i>
-                        <h4>Update</h4>
-                    </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>delete</i>
-                        <h4>Delete</h4>
-                    </div>
-
+                </div>
+                <div className='post'>
                 <div className='post__header'>
                         <div className='post__info'>
                             <h2>Username</h2>
                             <p>Photo</p>
-                </div>
-
-                    </div>
-
-                    <div className='post__body'>
-                    <p>Message Here</p>
-                    </div>
-
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <span className='material-icons'>thumb_up</span>
-                        <h4>Likes</h4>
-                    </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>thumb_down</i>
-                        <h4>Dislikes</h4>
-                    </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>message</i>
-                        <h4>Comment</h4>
-                    </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>edit</i>
-                        <h4>Update</h4>
-                    </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>delete</i>
-                        <h4>Delete</h4>
-                    </div>
-
-                <div className='post__header'>
-                        <div className='post__info'>
-                            <h2>Username</h2>
-                            <p>Photo</p>
-                </div>
-
-                    </div>
+                        </div>
+                
 
                     <div className='post__body'>
-                    <p>Message Here</p>
+                    <input type="text" placeholder='Comment Here'/>
+                        <button>Post</button>
                     </div>
 
                     <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <span className='material-icons'>thumb_up</span>
-                        <h4>Likes</h4>
+                        <div className='inputOption'>
+                            <i className='material-icons'>thumb_up</i>
+                            <h4>Likes</h4>
+                        </div>
+                        <div className='inputOption'>
+                            <i className='material-icons'>thumb_down</i>
+                            <h4>Dislikes</h4>
+                        </div>
+                        <div className='inputOption'>
+                            <i className='material-icons'>message</i>
+                            <h4>Comment</h4>
+                        </div>
+                        <div className='inputOption'>
+                            <i className='material-icons'>edit</i>
+                            <h4>Update</h4>
+                        </div>
+                        <div className='inputOption'>
+                            <i className='material-icons'>delete</i>
+                            <h4>Delete</h4>
+                        </div>
                     </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>thumb_down</i>
-                        <h4>Dislikes</h4>
-                    </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>message</i>
-                        <h4>Comment</h4>
-                    </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>edit</i>
-                        <h4>Update</h4>
-                    </div>
-                    <div className='feed__inputOptions'>
-                        <div className='inputOption'></div>
-                        <i className='material-icons'>delete</i>
-                        <h4>Delete</h4>
-                    </div>
+                </div>
+                
 
             </div>
             {/* comment end */}
