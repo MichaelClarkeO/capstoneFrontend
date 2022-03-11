@@ -1,13 +1,10 @@
-import { Link } from "react-router-dom"
+import React from 'react'
 
-const Nav = (props) => {
+const Nav = () => {
   return (
-    <nav className="nav">
-        <Link to="/">
-            <div>Scores</div>
-        </Link>    
-    </nav>
-  );
+    <div>Nav</div>
+  )
 }
 
 export default Nav
+

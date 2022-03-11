@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+ .flex-column {
+   background-color: #282c34;
+   max-height: 200px; 
+   max-width: 200px;
+   overflow: hidden;
+   overflow: scroll;
+ }
+
