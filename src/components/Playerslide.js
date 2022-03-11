@@ -7,16 +7,57 @@ const Playerslide = (props) => {
     console.log(props.players)
     
     return (
-        //  <Nav>
-        // {props.players.length> 0 && props.players.map((p)=>{
-        //     return <Nav.Link href={`/player/${p.PlayerID}`}>{p.FirstName}</Nav.Link>
-        // })}
-        // </Nav>
-        // <Link to="/player/123">Expenses</Link>
-        <div className="flex-column">
-            {props.players.length> 0 && props.players.map((p)=>{
-             return <a href={`/player/${p.PlayerID}`}>{p.FirstName} {p.LastName}</a>
-         })}
+       <div>
+           <div className='widgets'>
+                <div className='widgets__header'>
+                <h1>Players</h1>
+                <i className='material-icons'>info</i>
+                </div>
+
+                <div className='widgets__article'>
+                    <div className='widget__articleLeft'>
+                    <i className='material-icons'> fiber_manaual_record</i>
+                    </div>
+                </div>
+                <div className='widgets__article'>
+                    <h4 className='widget__articleRight'></h4>
+                    <p>Top news - 4500 readers</p>
+                </div>
+                <div className='widgets__article'>
+                    <div className='widget__articleLeft'>
+                    <i className='material-icons'> fiber_manaual_record</i>
+                    </div>
+                </div>
+                <div className='widgets__article'>
+                    <h4 className='widget__articleRight'></h4>
+                    <p>Top news - 4500 readers</p>
+                </div>
+                <div className='widgets__article'>
+                    <div className='widget__articleLeft'>
+                    <i className='material-icons'> fiber_manaual_record</i>
+                    </div>
+                </div>
+                <div className='widgets__article'>
+                    <h4 className='widget__articleRight'></h4>
+                    <p>Top news - 4500 readers</p>
+                </div>
+                <div className='widgets__article'>
+                    <div className='widget__articleLeft'>
+                    <i className='material-icons'> fiber_manaual_record</i>
+                    </div>
+                </div>
+                <div className='widgets__article'>
+                    <h4 className='widget__articleRight'></h4>
+                    <p>Top news - 4500 readers</p>
+                </div>
+
+
+                
+            <div className="flex-column">
+                {props.players.length> 0 && props.players.map((p)=>{
+                return <a href={`/player/${p.PlayerID}`}>{p.FirstName} {p.LastName}</a>
+            })}
+            </div> 
         </div>
         );
     }
@@ -28,22 +69,3 @@ const Playerslide = (props) => {
 export default Playerslide
 
 
-{/* <>
-        <img src="{player.PhotoUrl}" alt={player.FirstName} />
-        <h1> {player.FirstName} {player.LastName} </h1>
-        <h2> {player.Status} </h2>
-        <h2> {player.Team} </h2>
-        <div> {player.PositionCategory} </div>
-        <div> {player.Position} </div>
-        <div> {player.Height} </div>
-        <div> {player.Weight} </div>
-        <div> {player.BirthDate} </div>
-        <div> {player.BirthCity}, {player.BirthState} </div>
-        <div> {player.HighSchool} </div>
-        <div> {player.College} </div>
-        <div> {player.Salary} </div>
-        <div> {player.Experience} </div>
-        <a href='https://www.nba.com/stats/player/${player.NbaDotComPlayerID}'>Player stats </a>
-        </>
-        )
-         */}
