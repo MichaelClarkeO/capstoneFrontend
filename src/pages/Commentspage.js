@@ -1,8 +1,81 @@
 import React from 'react'
+import Commentcreate from './Commentcreate'
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
+
+function Comment(props) {
+    const [newForm, setNewForm] = useState({
+        profileImage: "",
+        userName: "",
+        uploadPicture: "",
+        comment: "",
+    })
+
+    const handleChange = event => {
+        setNewForm({...newForm, [event.target.name]: event.target.value })
+    }
+    
+    const handleSubmit = event => {
+        event.preventDefault()
+        props.createComment(newForm)
+        setNewForm({
+            profileImage: "",
+            userName: "",
+            uploadPicture: "",
+            comment: "",
+        })
+    }
+
+    const loaded = () => {
+        return props.comment.map((message) =>(
+            <div key={message._id} className="message">
+            <Link to={`/comment/${message._id}`}><h1>{message.comment}</h1></Link>
+            <img src={message.uploadPicture} alt={message.userName} />
+            </div>
+        ));
+    };
+
+    const loading = () => { 
+        return <h1> Loading...</h1>
+    };
+    return (
+        <section>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    value={newForm.UserName}
+                    name="Username"
+                    placeholder="Username"
+                    onChange={handleChange}
+                />
+                <input
+                    type="text"
+                    value={newForm.uploadPicture}
+                    name="image"
+                    placeholder="Insert Image"
+                    onChange={handleChange}
+                />
+                <input
+                    type="text"
+                    value={newForm.comment}
+                    name="Comment"
+                    placeholder="Comment Here"
+                    onChange={handleChange}
+                />
+                <input type="submit" value="Create Comment" />
+            </form>
+            {props.people ? loaded() : loading()}
+        </section>
+    );
+}
 
 const Commentspage = () => {
+    
   return (
     <div>
+       <Link to="/create">
+          <div>New comment</div>
+        </Link>
         <div className='feed__inputContainer'>
                 <div className='feed__input'>
                 <i className='material-icons'>create</i>

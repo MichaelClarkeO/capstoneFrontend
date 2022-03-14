@@ -24,6 +24,7 @@ const Home = () => {
             <div className='widgets'>
                 <div className='widgets__header'>
                 <h1>Players</h1>
+        
                 <Teamslide />
                 </div>
             {/* Widget End */}

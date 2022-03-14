@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from './Form'
 
 const Comments = () => {
   return (
@@ -40,12 +41,8 @@ const Comments = () => {
                             <p>Username</p>
                         </div>
                 </div>
-
                     <div className='post__body'>
-                    <form>
-                            <input type="text" placeholder='Comment Here'/>
-                            <button>Post</button>
-                        </form>
+                    <Form />
                     </div>
 
                     <div className='feed__inputOptions'>

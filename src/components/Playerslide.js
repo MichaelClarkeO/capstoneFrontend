@@ -14,10 +14,6 @@ const Playerslide = (props) => {
         </div> 
         );
     }
-        
-       
-        
-
 
 export default Playerslide
 
