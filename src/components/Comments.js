@@ -1,5 +1,6 @@
 import React from 'react'
 import Form from './Form'
+import Comment from '../pages/Comment'
 
 const Comments = () => {
   return (
@@ -8,10 +9,7 @@ const Comments = () => {
         <div className='feed__inputContainer'>
             <div className='feed__input'>
                 <i className='material-icons'>create</i>
-                <form>
-                    <input type="text" placeholder='Start a post'/>
-                    <button>Send</button>
-                </form>
+                <Comment />
             </div>
                 <div className='feed__inputOptions'>
                     <div className='inputOption'>
@@ -37,7 +35,7 @@ const Comments = () => {
         <div className='post'>
                 <div className='post__header'>
                         <div className='post__info'>
-                            <h2>Photo</h2>
+                            <h2>profileImage</h2>
                             <p>Username</p>
                         </div>
                 </div>
@@ -148,7 +146,7 @@ const Comments = () => {
 
                     <div className='post__body'>
                     <form>
-                            <input type="text" placeholder='Comment Here'/>
+                            <input type="text" placeholder={Comment.comment}/>
                             <button>Post</button>
                         </form>
                     </div>

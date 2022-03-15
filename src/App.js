@@ -45,8 +45,8 @@ React.useEffect(()=>{
   return (
     <div className="App">
     <Nav /> 
-      {/* <Playerslide players={players}/>
-      <Teamslide teams={teams}/> */}
+      <Playerslide players={players}/>
+      <Teamslide teams={teams}/>
       <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/comment" element={<Comment URL={URL} />} />
