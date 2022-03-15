@@ -8,6 +8,11 @@ const Teamslide = (props) => {
     
     return (
         <div>
+               {/* <div className="flex-column">
+           {props.teams.length> 0 && props.teams.map((p)=>{
+            return <a href={`/team/${p.TeamID}`}>{p.City} {p.Name}</a>
+        })}
+        </div>  */}
             <div className='widgets__header2'>
                 <h1>Teams</h1>
                 <i className='material-icons'>info</i>
@@ -52,11 +57,7 @@ const Teamslide = (props) => {
         </div>
     )
 }
-            // <Nav className="flex-column">
-         //{props.teams.length> 0 && props.teams.map((p)=>{
-        // return <Nav.Link href={`/team/${p.TeamID}`}>{p.City}{p.Name}</Nav.Link>
-     //})} 
-            //</Nav> 
+   
      
         
        

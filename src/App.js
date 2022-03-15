@@ -1,17 +1,16 @@
 import './App.css';
 import Nav from './components/Nav';
-import { Routes, Route, Outlet} from "react-router-dom";
+import React from 'react';
+import Playerslide from './components/Playerslide';
+import Main from './pages/Main';
+import Teamslide from './components/Teamslide';
+import { useEffect, useState } from "react"
+import Comment from './pages/Comment';
+import { Route, Routes, Outlet } from "react-router-dom"
+import Editpage from './pages/Editpage';
 import Home from './pages/Home';
 import Playerprofile from './pages/Playerprofile';
-import Teamprofile from './pages/Teamprofile';
-import Commentspage from './pages/Commentspage';
-import React from 'react';
-import Form from './components/Form';
-import Playerslide from './components/Playerslide';
-import Teamslide from './components/Teamslide'
-import Userprofile from './pages/Userprofile';
-import PictureCard from './components/PictureCard'
-import Create from './pages/Commentcreate';
+
 
 function App() {
   const apiKey = "821d7fd8045a41fda38614f49bfb1ece"
@@ -34,27 +33,26 @@ function App() {
     const data = await response.json();
     setTeams(data);
   };
+  const URL = "http://localhost:4000/"
+
 React.useEffect(()=>{
   getPlayers()
 }, [])
 React.useEffect(()=>{
   getTeam()
 }, [])
+
   return (
     <div className="App">
     <Nav /> 
-      <Playerslide players={players}/>
-    <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/comment/" element={<Commentspage />} />
-
-        <Route path="create" element ={<Create />} />
-        <Route path="/player/:id" element={<Playerprofile />} />
-        {/* render={(props) => <SingleProject {...props} />} */}
-        <Route path="/team/:id" element={<Teamprofile />} />
-        <Route path="/user" element={<Userprofile />} />
-    </Routes>
-    <Outlet />
+      {/* <Playerslide players={players}/>
+      <Teamslide teams={teams}/> */}
+      <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/comment" element={<Comment URL={URL} />} />
+                <Route path="/comment/:id" element={<Editpage URL={URL} />} />
+                {/* <Route path="/player/:id" element={<Playerprofile />} /> */}
+        </Routes>
     </div>
   );
 }
